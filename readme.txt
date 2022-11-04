@@ -1,0 +1,22 @@
+以下参照
+https://tutorial.djangogirls.org/ja/django_installation/
+
+プロジェクトを作成しよう！https://tutorial.djangogirls.org/ja/django_start_project/
+
+サイト:
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+
+変更点:
+STATIC_ROOT = BASE_DIR / 'static'
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR, 'db.sqlite3',
+    }
+}
