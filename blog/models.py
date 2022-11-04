@@ -1,4 +1,5 @@
 # Create your models here.d
+# 投稿の内容を保存するためのPostモデル
 from django.conf import settings
 from django.db import models
 from django.utils import timezone
